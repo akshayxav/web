@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0875e1ca7d.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <title>ASTRA</title>
+  <link rel="icon" href="./assets/resized logo 2.png" type="image/icon type">
+  <link rel="stylesheet" href="add.css">
+</head>
+<body>
+  <nav class="navbar bg-black nav1">
+    <div class="container-fluid"></div>
+    <a class="navbar-brand"><img class="logo" src="./assets/resized logo 2.png" width="200px" alt=""><br></a>    
+
+  <ul class="sidebar">
+    <li onclick=hideSidebar()><a class="nav-link nav-link-ltr mobile" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+    <li><a class="nav-link nav-link-ltr active mobile" href="index.html">HOME</a></li>
+    <li><a class="nav-link nav-link-ltr mobile " href="about.html">ABOUT US</a></li>
+    <li><a class="nav-link nav-link-ltr  mobile" href="products.html">EVENTS</a></li>
+    <li><a class="nav-link nav-link-ltr mobile" href="contact.html">CONTACT</a></li>
+  </ul>
+  <ul>
+<!-- <li><a class="nav-link nav-link-ltr"><a href=""><img src="./assets/logo.png" id="logo" alt="" width="160px"></a></li> -->
+<li><a class="nav-link nav-link-ltr active hideOnMobile" href="index.html">HOME</a></li>
+<li><a class="nav-link nav-link-ltr  hideOnMobile" href="about.html">ABOUT</a></li>
+<li><a class="nav-link nav-link-ltr  hideOnMobile" href="products.html">EVENTS</a></li>
+<li><a class="nav-link nav-link-ltr  hideOnMobile" href="contact.html">CONTACT</a></li>
+<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+</ul>
+</div>
+</nav>
+<script>
+function showSidebar(){
+
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
+</script>
+<!--
+<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="./assets/1.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption top-0 mt-4 ">
+          <h1 class="display-1 fw-bolder text-capitalize">Your Complete Hygiene Partner</h1>
+          <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/[971509246996]">   Chat With Us</a></button>
+          <br>
+          <!-- <button type="button" class="btn btn-warning px-4 py-2 fs-5 mt-5"><a href="#">Learn More</a></button> 
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./assets/2.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption top-0 mt-4 ">
+          <h1 class="display-1 fw-bolder text-capitalize">Your Complete Hygiene Partner</h1>
+          <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/[971509246996]">   Chat With Us</a></button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./assets/3.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption top-0 mt-4 ">
+          <h1 class="display-1 fw-bolder text-capitalize">Your Complete Hygiene Partner</h1>
+          <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5"><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/[971509246996]">   Chat With Us</a></button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>-->
+  <section id="firstsec" class="firstsec">
+    <div class="container">
+      <h1 class="h11">WELCOME</h1>
+      <div class="imgfnt">
+      <img class="frontimg" src="./assets/ASTRA LOGO.png" alt=""></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <div class="card bg-dark cc1">
+    <div class="card-body">
+        <h1>About ASTRA Fest</h1>
+        ASTRA Fest is the annual cultural and technical fest of DON BOSCO COLLEGE MAMPETTA. It brings together students from all over the country to showcase their talents and compete in various events.
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="container-fluid" id="footer">
+    <div class="row">
+     <div class="col-3">
+      <ul>
+          <span class="footr">STUDENT COORDINATORS</span>
+          <br>
+          <br>
+          <li>ALBIN-<a href="tel:+917510585077" class="ph-no-st">7510585077</a></li>
+          <li>SHIMNA-<a href="tel:+918592961006" class="ph-no-st">8592961006</a></li></li>
+          <li>THWALIB-<a href="tel:+918848449718" class="ph-no-st">8848449718</a></li></li>
+          <li>SHIFNA-<a href="tel:+919745619565" class="ph-no-st">9745619565</a></li></li>
+          <li>ANSYA-<a href="tel:+918714157835" class="ph-no-st">8714157835</a></li></li>
+          <LI>AAJO-<a href="tel:+919037717154" class="ph-no-st">9037717154</a></li></LI>
+      </ul>
+    </div>
+    
+    <div class="col-3">
+      <ul>
+          <span class="footr">FACULTY COORDINATORS</span>
+          <br>
+          <br>
+          <li>MS. ABHIRAMI-<a href="tel:+918606847816" class="ph-no-st">8606847816</a></li>
+          <li>MR. SUDHEESH C-<a href="tel:+917736541154" class="ph-no-st">7736541154</a></li>
+
+      </ul>
+    </div>
+    
+          <div class="col-3" id="footer1">
+            <ul class>
+              <span class="footr">Address</span><br> <br>
+              <B id="cmpny">Don Bosco College</B> <br>
+              <i class='bx bxs-location-plus'></i>  Mampetta Rd, Mukkam, Manassery, Kerala 673602<br>
+              <i class='bx bxs-phone'></i><a href="tel:+919605156418" class="ph-no">+919605156418</a><br>
+              <i class='bx bx-envelope'></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=astrafest2k25@gmail.com"
+              class="ph-no"> astrafest2k25@gmail.com</a><br>
+          </ul>
+          <div class="contact1">
+            <button class="ig1" type="button" onclick="location.href'https://www.instagram.com/astra._.fest'">
+            <i class='bx bxl-instagram-alt' ></i></button>
+          </div>
+          </div>
+          <div class="col-3">
+            <span class="footr"> Our Loacation</span> 
+            <br>
+            <br>
+            <p><iframe class="loc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.1081179647613!2d75.97626677443479!3d11.326807548801966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba642405b6b7733%3A0xb20080c4fcff72d3!2sDon%20Bosco%20College!5e0!3m2!1sen!2sin!4v1739812843590!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+          </div>        
+          <div class="container-sm">
+          </div>
+      </ul>
+    </div>
+    <hr>
+    <div class="copyright">
+      <p>© 2025 ASTRA Fest. All rights reserved.</p>
+      <p>Powered By Capxica</p>
+    </div>  
+    </div>    
+    </div>   
+    </div>
+    </div>   
+    <br>
+    <div class="pageup">
+    <a href="#top"><i class='bx bx-chevron-up-circle pageupbtn'></i></a>
+    </div>
+</body>
+</html>
+
